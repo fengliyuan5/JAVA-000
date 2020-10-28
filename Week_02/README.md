@@ -1,8 +1,13 @@
 # 1.使用 GCLogAnalysis.java 自己演练一遍串行 / 并行 /CMS/G1 的案例。
-执行命令`java -XX:+UseSerialGC -Xms128m -Xmx128m -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis`
-       `java -XX:+UseParallelGC -Xms4096m -Xmx4096m -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis`
-       `java -XX:+UseConcMarkSweepGC -Xms4096m -Xmx4096m -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis`
-       `java -XX:+UseG1GC -Xms7196m -Xmx7196m -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -GCLogAnalysis`
+执行命令
+
+`java -XX:+UseSerialGC -Xms128m -Xmx128m -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis`
+
+`java -XX:+UseParallelGC -Xms4096m -Xmx4096m -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis`
+       
+`java -XX:+UseConcMarkSweepGC -Xms4096m -Xmx4096m -XX:+PrintGCDetails -XX:+PrintGCDateStamps GCLogAnalysis`
+       
+`java -XX:+UseG1GC -Xms7196m -Xmx7196m -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -GCLogAnalysis`
 
 ## 1.1 串行 GC 分析
 内存 | 现象 | ygc平均时间 | ogc平均时间 | 最大时间
